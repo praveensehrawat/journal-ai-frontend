@@ -1,0 +1,21 @@
+# AI-Assisted Journal System - Frontend
+
+This is the frontend application for the AI-Assisted Journal System, built with React.
+
+## Features
+
+- ✍️ Write journal entries with nature ambience selection
+- 🔍 Real-time emotion analysis using AI
+- 📖 View all past journal entries
+- 📊 See insights about emotional patterns over time
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+## Installation
+
+1. Install dependencies:
+```bash
+npm install

@@ -1,0 +1,279 @@
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.app-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #d0d0d0;
+}
+
+.tab-button.active {
+    background-color: #667eea;
+    color: white;
+}
+
+.main-content {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+/* Form styles */
+.journal-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.analyze-button,
+.submit-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.analyze-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.analyze-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.submit-button {
+    background-color: #667eea;
+    color: white;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #5a67d8;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Analysis result styles */
+.analysis-result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #667eea;
+}
+
+.analysis-result h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.emotion-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #667eea;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.keyword-tag {
+    padding: 3px 8px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+/* Entries list styles */
+.entries-list {
+    display: grid;
+    gap: 20px;
+}
+
+.entry-card {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #667eea;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.entry-ambience {
+    background-color: #667eea;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.entry-date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.entry-text {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.entry-emotion {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+    font-size: 0.9em;
+    color: #1976d2;
+}
+
+/* Insights styles */
+.insights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.insight-card {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.insight-card h3 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.insight-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.insight-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.keyword-item {
+    padding: 5px 10px;
+    background-color: #667eea;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.9em;
+}
+
+.no-data {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+}
+
+.no-data p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
